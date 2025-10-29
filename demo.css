@@ -1,0 +1,28 @@
+body {
+  background-color: #f8f9fa;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #007bff !important;
+}
+.hero {
+  background: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1920&q=80")
+    center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+footer {
+  background-color: #212529;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+}
