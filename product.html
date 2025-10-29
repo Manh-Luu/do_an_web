@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chi tiết sản phẩm - TechShop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .product-img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .price {
+        color: #dc3545;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .btn-buy {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+      }
+      footer {
+        background-color: #212529;
+        color: #ccc;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">TechShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Laptop</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Điện thoại</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nội dung chi tiết sản phẩm -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Hình ảnh sản phẩm -->
+          <div class="col-md-6">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-pro-max-blue-thumb-600x600.jpg"
+              alt="iPhone 15 Pro Max"
+              class="product-img"
+            />
+          </div>
+
+          <!-- Thông tin sản phẩm -->
+          <div class="col-md-6">
+            <h2>iPhone 15 Pro Max</h2>
+            <p class="text-muted">Thương hiệu: Apple | Bảo hành: 12 tháng</p>
+            <p class="price">33.990.000₫</p>
+            <p>
+              iPhone 15 Pro Max là mẫu điện thoại cao cấp nhất của Apple năm
+              2025, với chip A17 Pro mạnh mẽ, màn hình Super Retina XDR 120Hz và
+              cụm camera zoom 5x ấn tượng.
+            </p>
+
+            <div class="mb-3">
+              <label for="color" class="form-label">Màu sắc:</label>
+              <select id="color" class="form-select">
+                <option>Titan Xanh</option>
+                <option>Đen Titan</option>
+                <option>Trắng Titan</option>
+                <option>Vàng Titan</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary btn-buy">
+              🛒 Thêm vào giỏ hàng
+            </button>
+            <button class="btn btn-success btn-buy mt-2">💳 Mua ngay</button>
+          </div>
+        </div>
+
+        <!-- Mô tả chi tiết -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h4>Thông tin chi tiết</h4>
+            <ul>
+              <li>Màn hình: 6.7" Super Retina XDR, 120Hz</li>
+              <li>Chip: Apple A17 Pro</li>
+              <li>RAM: 8GB</li>
+              <li>Bộ nhớ: 256GB / 512GB / 1TB</li>
+              <li>Camera: 48MP chính, zoom quang học 5x</li>
+              <li>Pin: 4422 mAh, sạc nhanh 30W</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sản phẩm liên quan -->
+        <div class="mt-5">
+          <h4>Sản phẩm tương tự</h4>
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="card">
+                <img
+                  src="https://cdn.tgdd.vn/Products/Images/42/306222/samsung-galaxy-s24-ultra-grey-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body text-center">
+                  <h6>Galaxy S24 Ultra</h6>
+                  <p class="text-danger fw-bold">28.990.000₫</p>
+                  <a href="product.html" class="btn btn-outline-primary btn-sm"
+                    >Xem</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img
+                  src="https://cdn.tgdd.vn/Products/Images/42/306223/xiaomi-14-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body text-center">
+                  <h6>Xiaomi 14</h6>
+                  <p class="text-danger fw-bold">18.490.000₫</p>
+                  <a href="product.html" class="btn btn-outline-primary btn-sm"
+                    >Xem</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- thêm sản phẩm khác nếu muốn -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 TechShop. All rights reserved.</p>
+        <p>Email: support@techshop.vn | Điện thoại: 0901 234 567</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
